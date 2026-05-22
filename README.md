@@ -1,7 +1,7 @@
 
-# Datenschutzerklärung für Clubheim-Kasse
+# Datenschutzerklärung für Club Tab - Die Clubheim-Kasse
 
-*Stand: 28.04.2026*
+*Stand: 22.05.2026*
 
 ---
 
@@ -20,9 +20,9 @@ Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nati
 
 ## 2. Allgemeines
 
-**Clubheim-Kasse** ist eine Kassen- und Verwaltungs-App für Vereinsheime. Die App wird lokal auf dem Endgerät (Smartphone, Tablet) des Nutzers betrieben. Sämtliche in der App erfassten Daten werden ausschließlich auf diesem Endgerät in einer lokalen Datenbank (SQLite) gespeichert.
+**Club Tab** ist eine Kassen- und Verwaltungs-App für Vereinsheime. Die App wird lokal auf dem Endgerät (Smartphone, Tablet) des Nutzers betrieben. Sämtliche in der App erfassten Daten werden ausschließlich auf diesem Endgerät in einer lokalen Datenbank (SQLite) gespeichert.
 
-> Es findet **keine Übertragung von Daten an Server des Entwicklers oder an Dritte** statt. Die App benötigt keine Internetverbindung, um ihre Kernfunktionen zu erfüllen.
+> Es findet **keine Übertragung von Daten an Server des Entwicklers oder an Dritte** statt.
 
 ---
 
@@ -38,6 +38,8 @@ Innerhalb der App werden folgende Daten erfasst und lokal gespeichert:
 | **Artikelstamm** | Bezeichnungen und Preise der angebotenen Artikel |
 
 Die Eingabe dieser Daten erfolgt durch den Nutzer der App selbst. Eine automatische Erhebung personenbezogener Daten durch die App findet nicht statt.
+
+Zusätzlich speichert die App lokal den letzten von Google Play gemeldeten Abo-Status (aktiv / nicht aktiv) sowie den Zeitpunkt der letzten Prüfung. Diese Information dient ausschließlich dazu, die App auch bei kurzzeitig fehlender Internetverbindung freischalten zu können. Es werden keine Zahlungs- oder Kontodaten in der App selbst gespeichert.
 
 ---
 
@@ -80,20 +82,50 @@ Eine Weitergabe der erfassten Daten an Dritte findet durch die App nicht statt. 
 - keine Tracking-Tools
 - keine Cloud-Synchronisation
 
+Eine eigenständige Datenverarbeitung durch Google Play im Rahmen der Abo-Abwicklung ist davon ausgenommen und unter Ziffer 8 beschrieben.
+
 ---
 
-## 8. Berechtigungen der App
+## 8. Abo & Zahlungsabwicklung über Google Play
+
+Die Nutzung von Clubheim-Kasse setzt ein kostenpflichtiges Abonnement (nach optionaler kostenloser Probezeit) voraus. Kauf, Abrechnung, Verlängerung, Kündigung und Erstattung des Abonnements werden ausschließlich über Google Play abgewickelt.
+
+Eigenverantwortlicher Anbieter dieser Zahlungsabwicklung ist:
+
+> Google Ireland Limited
+> Gordon House, Barrow Street
+> Dublin 4, Irland
+
+(bzw. für Nutzer außerhalb des Europäischen Wirtschaftsraums: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA)
+
+Google verarbeitet im Rahmen der Abo-Abwicklung insbesondere:
+
+- die mit dem Google-Konto verknüpften Identifikations- und Kontaktdaten,
+- Zahlungs- und Abrechnungsinformationen,
+- Geräte- und Lizenzkennungen sowie Kauf- und Statushistorie des Abonnements.
+
+Der App-Anbieter (Ziffer 1) erhält von Google keine Zahlungsdaten (insbesondere keine Kreditkarten-, Konto- oder Adressdaten). Vom App-Anbieter einsehbar sind ausschließlich aggregierte Verkaufs- und Abo-Statistiken im Google Play Console-Dashboard sowie pseudonyme Order-IDs.
+
+Innerhalb der App ruft die offizielle Google-Play-Billing-Bibliothek den aktuellen Abo-Status ab. Übermittelt werden dabei nur die Informationen, die für diese Statusprüfung technisch erforderlich sind (Geräte- und Play-Sitzungskennung sowie der Produktbezeichner des Abos).
+
+Die jeweils aktuelle Datenschutzerklärung von Google ist abrufbar unter:
+https://policies.google.com/privacy
+
+---
+
+## 9. Berechtigungen der App
 
 Die App nutzt folgende Geräteberechtigungen:
 
 - **Speicherzugriff** – zum Anlegen der lokalen Datenbank sowie zum Speichern von PDF-Exporten.
 - **Druck-/Bluetooth-Schnittstellen** *(sofern verwendet)* – zum Drucken von Belegen über vom Nutzer ausgewählte Drucker.
+- **Internetzugriff** – ausschließlich für die Kommunikation mit Google Play zur Abo-Statusprüfung (siehe Ziffer 8).
 
 Andere Berechtigungen werden nicht angefordert.
 
 ---
 
-## 9. Rechte der betroffenen Personen
+## 10. Rechte der betroffenen Personen
 
 Soweit personenbezogene Daten betroffen sind, stehen den betroffenen Personen nach der DSGVO folgende Rechte zu:
 
@@ -105,11 +137,11 @@ Soweit personenbezogene Daten betroffen sind, stehen den betroffenen Personen na
 - **Widerspruchsrecht** (Art. 21 DSGVO)
 - Recht auf **Beschwerde bei einer Aufsichtsbehörde** (Art. 77 DSGVO)
 
-Da die Datenverarbeitung ausschließlich lokal beim betreibenden Verein erfolgt, sind diese Rechte gegenüber dem unter Ziffer 1 genannten Verantwortlichen geltend zu machen.
+Soweit die Daten ausschließlich lokal beim betreibenden Verein verarbeitet werden, sind diese Rechte gegenüber dem unter Ziffer 1 genannten Verantwortlichen geltend zu machen. Hinsichtlich der durch Google verarbeiteten Zahlungs- und Abo-Daten sind die Rechte gegenüber Google als eigenständigem Verantwortlichen geltend zu machen.
 
 ---
 
-## 10. Datensicherheit
+## 11. Datensicherheit
 
 Der betreibende Verein ist verpflichtet, das Endgerät, auf dem die App betrieben wird, durch geeignete Maßnahmen gegen unbefugten Zugriff zu sichern, insbesondere durch:
 
@@ -119,12 +151,12 @@ Der betreibende Verein ist verpflichtet, das Endgerät, auf dem die App betriebe
 
 ---
 
-## 11. Änderungen dieser Datenschutzerklärung
+## 12. Änderungen dieser Datenschutzerklärung
 
 Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen der App, gesetzliche Vorgaben oder die Datenverarbeitung ändern. Die jeweils aktuelle Fassung ist im Repository der App verfügbar.
 
 ---
 
-## 12. Kontakt
+## 13. Kontakt
 
 Bei Fragen zum Datenschutz wenden Sie sich bitte an den unter [Ziffer 1](#1-verantwortlicher) genannten Verantwortlichen.
